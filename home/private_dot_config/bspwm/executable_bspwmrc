@@ -35,7 +35,7 @@ bspc config pointer_action3         resize_corner
 # [Autostart applications]
 
 pgrep -x sxhkd > /dev/null || sxhkd &
-feh --bg-fill "$HOME/.config/walls/current/homescreen.png"  --no-fehbg
+feh --bg-scale "$HOME/.config/walls/current/homescreen.jpg"  --no-fehbg
 plank &
 eww -c ~/.config/eww/ open bar 2>&1 > /dev/null &
 xinput set-prop 10 325 1
@@ -44,8 +44,10 @@ dunst -conf ~/.config/dunst/dunstrc &
 fusuma -d  2>&1 > /dev/null &
 greenclip daemon &
 # picomj --animations --animation-for-open-window fly-in --animations --animation-for-open-window zoom -f -b &
-picomlb -b &
+picom -b &
 xmodmap ~/.Xmodmap
+syncthing --no-browser &
+
 # [BSPWM rules]
 
 bspc rule -a Plank border=off
@@ -53,3 +55,26 @@ bspc subscribe node_add | while read -r _
 do
   xdo raise -N Plank
 done &
+
+# Handle fullscreen
+# # Store the last fullscreen state
+last_state="off"
+
+while true; do
+    fullscreen_windows=$(bspc query -N -n .fullscreen)
+
+    if [ -n "$fullscreen_windows" ]; then
+        if [ "$last_state" != "on" ]; then
+            eww close-all
+            last_state="on"
+        fi
+    else
+        if [ "$last_state" != "off" ]; then
+            eww open bar
+            last_state="off"
+        fi
+    fi
+
+    sleep 0.5
+done &
+

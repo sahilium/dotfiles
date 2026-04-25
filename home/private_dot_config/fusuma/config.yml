@@ -1,16 +1,16 @@
 swipe:
   3:
     left:
-      sendkey: "LEFTMETA+LEFTSHIFT+LEFT"
+      sendkey: "bspc desktop -f prev"
     right:
-      sendkey: "LEFTMETA+LEFTSHIFT+RIGHT"
+      sendkey: "bspc desktop -f next"
     up:
       sendkey: "LEFTMETA+ENTER"
     down:
       sendkey: "LEFTMETA+SPACE"
   4:
     left:
-      sendkey: "LEFTALT+LEFT"
+      sendkey: "bspc desktop -f prev"
     right:
       sendkey: "LEFTALT+RIGHT"
     up:
@@ -29,3 +29,9 @@ hold:
     sendkey: "LEFTMETA+SPACE"
   4:
     sendkey: "LEFTMETA+W"
+
+threshold:
+  swipe: 0.6
+
+interval:
+  swipe: 0.8

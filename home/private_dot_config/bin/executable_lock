@@ -1,11 +1,11 @@
 #!/bin/sh
 
 BLANK='#00000000'
-CLEAR='#ffffff22'
+CLEAR='#1d202122'
 DEFAULT='#FABD2FBB'
-TEXT='#83A598FF'
-WRONG='#CC241DAA'
-VERIFYING='#98971AAA'
+TEXT='#EBDBB2FF'
+WRONG='#FB4934AA'
+VERIFYING='#B8BB26AA'
 FONT='SofiaPro'
 BG='/home/eugene/.config/walls/current/lockscreen.jpg'
 
@@ -41,6 +41,7 @@ i3lock-color \
 --greeter-size=26            \
 --screen 1                   \
 --image=$BG                  \
+--scale                      \
 --clock                      \
 --radius=45                  \
 --time-str="%H:%M:%S"        \

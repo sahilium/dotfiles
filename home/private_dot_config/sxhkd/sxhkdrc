@@ -57,9 +57,6 @@ super + control + n
 super + slash
 	networkmanager-dmenu > /dev/null 2>&1 &
 
-super + q
-	bspc node -g sticky
-
 super + comma
 	scrot
 
@@ -94,6 +91,9 @@ super + shift + Left
 
 super + shift + Right
 	bspc desktop -f next
+
+super + q
+	bspc node -g sticky
 
 ######### state/flags #########
 

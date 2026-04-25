@@ -152,7 +152,7 @@
                       :width "85%"
                       :height "20px"
                       :anchor "center top")
-  :windowtype "desktop"
-  :wm-ignore false
-  :reserve (struts :distance "40px" :side "top")
+  :windowtype "dock"
+  ; :wm-ignore false
+  ; :reserve (struts :distance "40px" :side "top")
 (bar))

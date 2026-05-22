@@ -45,7 +45,7 @@
 (defwidget volume []
   (button :class "volume"
           :tooltip "volume level"
-    " ${volume}%"
+    "${volume_icon} ${volume_value}%"
   )
 )
 
@@ -67,10 +67,10 @@
 )
 
 
-(defwidget tray []
-  (button :class "tray"
-          :onclick "eww -c ~/.config/eww open-many --toggle status"
-    ""
+(defwidget ram []
+  (button :class "ram"
+          :tooltip "RAM: ${ram_used}% | CPU: ${cpu_temp}°C | Fan: ${fan_speed} RPM"
+    " ${ram_used}%"
   )
 )
 
@@ -123,10 +123,9 @@
        :orientation "h"
        :space-evenly false
        :halign "end"
-    (tray)
-    (layout)
     (clip)
     (seperator)
+    (ram)
     (battery)
     (volume)
     (network_speed)

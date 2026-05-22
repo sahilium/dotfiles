@@ -1,0 +1,76 @@
+// Zed settings
+{
+  "status_bar": {
+    "line_endings_button": true,
+  },
+  "use_smartcase_search": true,
+  "which_key": {
+    "enabled": true,
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 2000,
+    },
+  },
+  "cli_default_open_behavior": "existing_window",
+  "terminal": {
+    "scroll_multiplier": 2.0,
+    "toolbar": {
+      "breadcrumbs": true,
+    },
+    "show_count_badge": true,
+    "font_size": 12.0,
+    "font_family": "JetBrainsMono Nerd Font",
+  },
+  "auto_update": false,
+  "agent_servers": {
+    "opencode": {
+      "type": "registry",
+    },
+  },
+  "proxy": "",
+  "ui_font_weight": 350.0,
+  "ui_font_family": ".SystemUIFont",
+  "buffer_line_height": "standard",
+  "buffer_font_weight": 350.0,
+  "buffer_font_family": ".SystemUIFont",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Material Icon Theme",
+  },
+  "project_panel": {
+    "hide_root": false,
+    "diagnostic_badges": true,
+    "git_status_indicator": true,
+    "indent_size": 16.0,
+    "entry_spacing": "standard",
+    "hide_gitignore": false,
+    "default_width": 200.0,
+    "dock": "right",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini",
+      "enable_thinking": true,
+      "effort": "high",
+    },
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "show_count_badge": true,
+    "dock": "left",
+  },
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14.0,
+  "theme": "Catppuccin Mocha",
+}

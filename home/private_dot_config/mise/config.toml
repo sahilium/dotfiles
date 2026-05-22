@@ -1,0 +1,30 @@
+[tools]
+bitwarden = "latest"
+bun = "latest"
+chezmoi = "latest"
+crystal = "latest"
+deno = "latest"
+elixir = "latest"
+eza = "latest"
+gleam = "latest"
+go = "latest"
+gradle = "latest"
+haskell = "latest"
+janet = "latest"
+jj = "latest"
+nim = "latest"
+node = "latest"
+ocaml = "latest"
+opam = "latest"
+opencode = "latest"
+ruby = "latest"
+supabase = "latest"
+wren = "latest"
+yazi = "latest"
+zig = "latest"
+zola = "latest"
+
+[settings]
+
+[settings.ruby]
+compile = false

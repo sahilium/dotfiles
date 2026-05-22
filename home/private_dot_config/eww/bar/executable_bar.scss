@@ -81,7 +81,7 @@
   margin: 5px 5px 5px 5px;
   padding: 0px 0px 0px 0px;
   font-family: Sofia Pro;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .volume {
@@ -89,8 +89,8 @@
   background-color: $bg;
   margin: 5px 5px 5px 5px;
   padding: 0px 0px 0px 0px;
-  font-family: Sofia Pro;
-  font-size: 15px;
+  font-family: Iosevka Nerd Font;
+  font-size: 13px;
 }
 
 .bluetooth {
@@ -99,7 +99,7 @@
   margin: 5px 5px 5px 5px;
   padding: 0px 0px 0px 0px;
   font-family: Sofia Pro;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .network_speed {
@@ -108,7 +108,16 @@
   margin: 5px 5px 5px 5px;
   padding: 0px 0px 0px 0px;
   font-family: Sofia Pro;
-  font-size: 15px;
+  font-size: 13px;
+}
+
+.ram {
+  color: $aqua;
+  background-color: $bg;
+  margin: 5px 5px 5px 5px;
+  padding: 0px 0px 0px 0px;
+  font-family: Sofia Pro;
+  font-size: 13px;
 }
 
 .closebutton {
@@ -168,14 +177,14 @@
 
 .workspace-occupied {
   font-family: Sofia Pro;
-  font-size: 12px;
+  font-size: 13px;
   color: $apple;
   padding: 0px 4px;
 }
 
 .workspace-empty {
   font-family: Sofia Pro;
-  font-size: 12px;
+  font-size: 13px;
   color: $aqua;
   padding: 0px 4px;
 }
@@ -242,7 +251,7 @@
   padding: 0px 7px 0px 7px;
   font-weight: bold;
   font-family: Iosevka Nerd Font;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 50px;
   transition: all ease 0.2s;
   &:hover {

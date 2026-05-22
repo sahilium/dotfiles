@@ -37,7 +37,7 @@ super + e
 	nemo 2>&1 > /dev/null
 
 super + z
-	floorp
+	vivaldi-stable
 
 super + b
 	brightnessctl set +60
@@ -46,19 +46,19 @@ super + shift + b
 	brightnessctl set 60-
 
 super + n
-	wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+
+	pactl set-sink-volume @DEFAULT_SINK@ +10%
 
 super + shift + n
-	wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-
+	pactl set-sink-volume @DEFAULT_SINK@ -10%
 
 super + control + n
-	wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 super + slash
 	networkmanager-dmenu > /dev/null 2>&1 &
 
 super + comma
-	scrot
+	flameshot gui
 
 ######### bspwm hotkeys ########
 

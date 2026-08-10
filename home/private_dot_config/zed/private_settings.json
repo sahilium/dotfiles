@@ -1,5 +1,17 @@
 // Zed settings
 {
+  "diagnostics": {
+    "lsp_pull_diagnostics": {
+      "enabled": false
+    }
+  },
+  "completions": {
+    "lsp": false
+  },
+  "enable_language_server": false,
+  "edit_predictions": {
+    "provider": "zed"
+  },
   "status_bar": {
     "line_endings_button": true,
   },
@@ -24,9 +36,22 @@
   },
   "auto_update": false,
   "agent_servers": {
-    "opencode": {
-      "type": "registry",
+    "claude-acp": {
+      "type": "registry"
     },
+    "opencode": {
+      "favorite_config_option_values": {
+        "model": [
+          "opencode/deepseek-v4-flash-free",
+          "opencode/big-pickle"
+        ]
+      },
+      "default_config_options": {
+        "mode": "build",
+        "model": "opencode/deepseek-v4-flash-free"
+      },
+      "type": "registry"
+    }
   },
   "proxy": "",
   "ui_font_weight": 350.0,
@@ -56,6 +81,7 @@
     "dock": "left",
   },
   "agent": {
+    "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini",

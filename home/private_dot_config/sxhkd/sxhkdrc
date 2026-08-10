@@ -60,6 +60,9 @@ super + slash
 super + comma
 	flameshot gui
 
+super + period
+	rofimoji
+
 ######### bspwm hotkeys ########
 
 # quit/restart bspwm

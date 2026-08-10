@@ -11,13 +11,13 @@
 ## Highlights
 
 * [gruvbox](https://github.com/morhetz/gruvbox) everywhere 😻
+* [BSPWM](https://github.com/BSPWM/bspwm) window manager
 * [eww bar](https://elkowar.github.io/eww/) with [fuzzy clock](https://github.com/coreymwamba/bash-fuzzy-clock)
 * [rofi](https://davatorium.github.io/rofi/) launcher
 * [picom](https://github.com/pijulius/picom) compositor (with animations, somewhat buggy)
 * [plank](https://github.com/ricotz/plank) dock
-* touchpad gestures with [fusuma](https://github.com/iberianpig/fusuma)
-
-> INFO: I use [chezmoi](https://chezmoi.io/) to manage my dotfiles. If you have not used chezmoi before, the organisation of this repo may initially confuse you.
+* touchpad gestures with [touchegg](https://github.com/JoseExposito/touchegg)
+* Dotfiles management with [chezmoi](https://chezmoi.io/)
 
 ## Gallery
 

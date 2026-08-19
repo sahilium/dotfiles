@@ -1,3 +1,4 @@
-set fish_cursor_default line
-set fish_cursor_insert line
+starship init fish | source
+zoxide init fish | source
+
 printf '\e[5 q'

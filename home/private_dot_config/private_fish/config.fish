@@ -1,3 +1,3 @@
-source ~/.config/fish/abbrs.fish
-source ~/.config/fish/paths.fish
-starship init fish | source
+set fish_cursor_default line
+set fish_cursor_insert line
+printf '\e[5 q'

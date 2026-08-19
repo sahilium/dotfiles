@@ -35,6 +35,7 @@ wren = "latest"
 yazi = "latest"
 zig = "latest"
 zola = "latest"
+zoxide = "latest"
 
 [settings]
 

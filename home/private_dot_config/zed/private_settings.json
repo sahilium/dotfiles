@@ -1,5 +1,6 @@
 // Zed settings
 {
+  "vim_mode": false,
   "diagnostics": {
     "lsp_pull_diagnostics": {
       "enabled": false

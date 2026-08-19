@@ -1,0 +1,2 @@
+[tasks.sysupd]
+command = "bash -lc 'sudo apt update && sudo apt upgrade -y'"
